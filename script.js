@@ -1,4 +1,24 @@
+const pairs = {
+  A: "T",
+  T: "A",
+  C: "G",
+  G: "C"
+};
+
 function pairElement(str){
+
+  const result = [];
+
+  for (let base of str) {
+    result.push([base, pairs[base]]);
+  }
+
+  return result;
+
+}
+
+
+/*function pairElement(str){
   
   const basesAdn = str.split("");
   const result = [] ;
@@ -25,3 +45,5 @@ console.log(pairElement("TTGAG"));
 // [["T","A"],["T","A"],["G","C"],["A","T"],["G","C"]]
 console.log(pairElement("CTCTA"));
 // [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]
+
+*/
