@@ -59,7 +59,7 @@ console.log(pairElement("CTCTA"));
 
   ```bash
   node script.js
-
+```
 
 ## Notes
 
